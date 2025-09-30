@@ -17,7 +17,7 @@ soal_kuis = [
 aktif = True
 
 while aktif:
-    print("\n===== KUIS PEMROGRAMAN 10 SOAL =====")
+    print("\n===== KUIS PEMROGRAMAN 20 SOAL =====")
     score = 0
     # Acak urutan soal
     random.shuffle(soal_kuis)
