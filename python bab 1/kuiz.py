@@ -1,6 +1,6 @@
 import random
 
-# Daftar soal kuis (10 soal)
+
 soal_kuis = [
     {"pertanyaan": "Bahasa pemrograman untuk AI yang populer adalah?", "jawaban": "python"},
     {"pertanyaan": "Ekstensi file Python adalah?", "jawaban": ".py"},
@@ -19,7 +19,7 @@ aktif = True
 while aktif:
     print("\n===== KUIS PEMROGRAMAN 20 SOAL =====")
     score = 0
-    # Acak urutan soal
+    
     random.shuffle(soal_kuis)
 
     for i, soal in enumerate(soal_kuis, start=1):
@@ -35,7 +35,7 @@ while aktif:
     print("\n===== HASIL AKHIR =====")
     print(f"Skor Anda: {score}/10")
 
-    # Nilai akhir
+   
     if score == 10:
         print("Sempurna! Nilai A+ 🎉")
     elif score >= 8:
@@ -47,7 +47,7 @@ while aktif:
     else:
         print("Perlu belajar lagi! Nilai D")
 
-    # Tanya main lagi
+    
     main_lagi = input("\nMau main lagi? (y/n): ").lower()
     if main_lagi != "y":
         aktif = False
